@@ -148,11 +148,4 @@ class BuzzerEventArgs : public EventArgs {
     getSource();
 };
 
-
-
-//USPAVANI PROCESORU
-
-
-
-
 #endif //_BUZZER_H_

@@ -31,32 +31,6 @@ void Buzzer::ended(int source) {
   m_event->invoke(&args);
 }
 
-//  private:
-//    Tone * melody;
-//    Event * event;
-//    bool m_cycle;
-//    bool m_running;
-//    int m_buzzerPin;
-//    int m_interruptPin;
-//    int m_melodyIdxFill;
-//    int m_melodyIdxCurr;
-//    char m_melodyLength;
-//    long desiredTime = 0;
-//    long currentTime = 0;
-//    long startMillis = 0;
-//  public:
-//    Buzzer(int melodyLength = 1);
-//    ~Buzzer();
-//    void registerBuzzer(int pin, int pinInterrupt);
-//    void registerBuzzer(int pin, int pinInterrupt, Event* event);
-//    bool addTone(int frequency, int duration);
-//    void process(unsigned long currentMillis);
-//    void startBuzzer();
-//    void stopBuzzer();
-//  private:
-//    void setPressedButtonEvent(Event* event);
-//    void pressed();
-
 void Buzzer::registerBuzzer(int pin, Event* event, bool cycle = false) {
   pinMode(pin, OUTPUT);
   m_buzzerPin = pin;

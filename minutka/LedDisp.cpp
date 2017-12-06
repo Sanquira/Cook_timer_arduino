@@ -64,9 +64,6 @@ void LedDisp::dispNumber(int minuteNumber, int secondNumber) {
   {
     currentDisp[0] = ERR;
     currentDisp[1] = ERR;
-//  } else  if (minuteNumber == 0) {
-//    currentDisp[0] = NONE;
-//    currentDisp[1] = NONE;
   } else  if (minuteNumber < 10) {
     currentDisp[0] = NONE;
     currentDisp[1] = decodeNumber(minuteNumber);
